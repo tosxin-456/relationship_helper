@@ -38,6 +38,6 @@ function calculatingTheSpearman_sRank (summationDSquare, X){
     return rank 
 }
 const rank = calculatingTheSpearman_sRank(summationDSquare, X);
-const spearManRank  = 1 - rank.toFixed(3)
+const spearManRank  = 1 + rank.toFixed(3)
 console.log(spearManRank);
 
