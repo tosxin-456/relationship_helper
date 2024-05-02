@@ -1,5 +1,5 @@
-const X = [4, 6, 3, 8, 2, 0];
-const Y = [2, 3, 4, 5, 6, 7];
+const X = [4, 6, 3, 8, 2, 0,7];
+const Y = [2, 3, 4, 5, 6, 7,3];
 
 function rankingOfNumbers(array) {
     const sortedArray = [...array];
@@ -14,7 +14,7 @@ function rankingOfNumbers(array) {
 
     // Assign ranks
     sortedArray.forEach((num, index) => {
-        arrayRank[num] += index + 1;
+        arrayRank[num] += index;
     });
 
     // Map original numbers to their ranks
@@ -38,6 +38,8 @@ function calculatingTheSpearman_sRank (summationDSquare, X){
     return rank 
 }
 const rank = calculatingTheSpearman_sRank(summationDSquare, X);
-const spearManRank  = 1 + rank.toFixed(3)
+const spearRank  = 1 + rank
+const spearManRank = spearRank.toFixed(1)
+
 console.log(spearManRank);
 
