@@ -40,7 +40,7 @@ function calculatingTheSpearman_sRank (summationDSquare, X){
 const rank = calculatingTheSpearman_sRank(summationDSquare, X);
 const spearRank  = 1 + rank
 const spearManRank = spearRank.toFixed(1)
-// console.log(rank)
+console.log(rank)
 
 if(spearManRank>=0.9){
 console.log('A very strong relatiionship, get married');
