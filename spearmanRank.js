@@ -30,5 +30,14 @@ const dSquare = d.map(num=>num**2)
 const summationDSquare = dSquare.reduce((acc,num) => acc + num ,0)
 
 
-console.log(summationDSquare);
+function calculatingTheSpearman_sRank (summationDSquare, X){
+    const sixSummationDSquare = 6 * summationDSquare
+    const n =  X.length
+    const nSquareMInnusOne = n*(n**2 - 1)
+    const rank = 1 - sixSummationDSquare/nSquareMInnusOne
+    return rank 
+}
+const rank = calculatingTheSpearman_sRank(summationDSquare, X);
+const totalRank  =  rank.toFixed(3)
+console.log(totalRank);
 
