@@ -25,8 +25,8 @@ function rankingOfNumbers(array) {
 
 const rankedX = rankingOfNumbers(X);
 const rankedY = rankingOfNumbers(Y)
-const d = [rankedX.map((num,index) =>num - rankedY[index]) ]
-// const dSquare
+const d = rankedX.map((num,index) =>num - rankedY[index]) 
+const dSquare = d.map(num=>num**2)
 
-console.log(d);
+console.log(dSquare);
 
