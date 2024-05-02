@@ -1,5 +1,5 @@
-const X = [4, 6, 3, 8, 2, 0,7];
-const Y = [2, 3, 4, 5, 6, 7,3];
+const X = [5,3,5,4];
+const Y = [5,4,4,5];
 
 function rankingOfNumbers(array) {
     const sortedArray = [...array];
@@ -40,6 +40,19 @@ function calculatingTheSpearman_sRank (summationDSquare, X){
 const rank = calculatingTheSpearman_sRank(summationDSquare, X);
 const spearRank  = 1 + rank
 const spearManRank = spearRank.toFixed(1)
+// console.log(rank)
 
-console.log(spearManRank);
+if(spearManRank>=0.9){
+console.log('A very strong relatiionship, get married');
+}
+else if(spearManRank>=0.6 && spearManRank<=0.8){
+console.log('work on yourselves');
+}
+else if(spearManRank>=0.3 && spearManRank<=0.5){
+console.log('shaky ground');
+}
+else{
+console.log('divorce');
+
+}
 
