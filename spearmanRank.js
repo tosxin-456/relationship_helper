@@ -51,7 +51,7 @@ else if(spearManRank>=0.6 && spearManRank<=0.8){
 console.log('work on yourselves');
 }
 else if(spearManRank>=0.3 && spearManRank<=0.5){
-console.log('shaky ground');
+console.log('shaky ground , work on yourselfs');
 }
 else{
 console.log('divorce fast');
