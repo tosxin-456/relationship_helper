@@ -40,6 +40,8 @@ function calculatingTheSpearman_sRank (summationDSquare, X){
 const rank = calculatingTheSpearman_sRank(summationDSquare, X);
 const spearRank  = 1 + rank
 const spearManRank = spearRank.toFixed(1)
+
+
 console.log(rank)
 
 if(spearManRank>=0.9){
@@ -52,7 +54,7 @@ else if(spearManRank>=0.3 && spearManRank<=0.5){
 console.log('shaky ground');
 }
 else{
-console.log('divorce');
+console.log('divorce fast');
 
 }
 
