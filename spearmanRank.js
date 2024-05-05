@@ -48,7 +48,7 @@ if(spearManRank>=0.9){
 console.log('A very strong relatiionship, get married');
 }
 else if(spearManRank>=0.6 && spearManRank<=0.8){
-console.log('work on yourselves');
+console.log('work on yourselves, or break up');
 }
 else if(spearManRank>=0.3 && spearManRank<=0.5){
 console.log('shaky ground , work on yourselfs');
