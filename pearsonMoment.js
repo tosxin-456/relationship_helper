@@ -22,18 +22,19 @@ rl.question("Enter values for x and separate with either a comma or space: ", fu
         rl.close();
     });
 });
+function calculatePearsonMoment(X, Y) {
+    const n = X.length;
+    let summationOfX = 0;
+    let summationOfY = 0;
+    let summationOfSquareOfX = 0;
+    let summationOfXAndYMultiplicant = 0;
 
-function calculatePearsonMoment(X,Y){
-    const n = X.length
-    let summationOfX = 0
-    let summationOfY = 0
-    let summationOfSquareOfX = 0
-    let summationOfXAndYMultiplicant = 0
-    for (let i = 0 ; i<=X.length; i++){
-     summationOfX += X[i];
-     summationOfY += Y[i]
-     summationOfSquareOfX += X[i] ** 2
-     summationOfXAndYMultiplicant += X[i] + Y[i]
+    for (let i = 0; i < n; i++) {
+        summationOfX += X[i];
+        summationOfY += Y[i];
+        summationOfSquareOfX += X[i] ** 2;
+        summationOfXAndYMultiplicant += X[i] * Y[i];
     }
- console.log(summationOfSquareOfX)
+
+    console.log(summationOfSquareOfX);
 }
