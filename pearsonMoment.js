@@ -41,7 +41,8 @@ function calculatePearsonMoment(X, Y) {
    let SXY = summationOfXAndYMultiplicant - ((summationOfX * summationOfY)/n)
    let SXX = summationOfSquareOfX - ((summationOfX ** 2)/n)
    let SYY = summationOfXAndYMultiplicant - ((summationOfY ** 2)/n)
+   const r = SXY / (Math.sqrt(SXX * SXY))
+   console.log(r);
    
-    console.log(SYY);
 }
 
