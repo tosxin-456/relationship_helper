@@ -22,6 +22,7 @@ rl.question("Enter values for x and separate with either a comma or space: ", fu
         rl.close();
     });
 });
+
 function calculatePearsonMoment(X, Y) {
     const n = X.length;
     let summationOfX = 0;
@@ -38,3 +39,4 @@ function calculatePearsonMoment(X, Y) {
 
     console.log(summationOfSquareOfX);
 }
+
