@@ -27,6 +27,7 @@ function calculatePearsonMoment(X, Y) {
     const n = X.length;
     let summationOfX = 0;
     let summationOfY = 0;
+    let summationOfSquareOfY = 0
     let summationOfSquareOfX = 0;
     let summationOfXAndYMultiplicant = 0;
 
@@ -34,9 +35,13 @@ function calculatePearsonMoment(X, Y) {
         summationOfX += X[i];
         summationOfY += Y[i];
         summationOfSquareOfX += X[i] ** 2;
+        summationOfSquareOfY += Y[i] ** 2
         summationOfXAndYMultiplicant += X[i] * Y[i];
     }
-
-    console.log(summationOfSquareOfX);
+   let SXY = summationOfXAndYMultiplicant - ((summationOfX * summationOfY)/n)
+   let SXX = summationOfSquareOfX - ((summationOfX ** 2)/n)
+   let SYY = summationOfXAndYMultiplicant - ((summationOfY ** 2)/n)
+   
+    console.log(SYY);
 }
 
